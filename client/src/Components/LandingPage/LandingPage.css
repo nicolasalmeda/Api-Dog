@@ -1,0 +1,81 @@
+/*Fondo*/
+.backgroundImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 25%;
+  object-fit: cover;
+  transform: translate(-50%, -25%);
+  z-index: -1;
+}
+.greatDiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mainLandingDiv {
+  /* flex-grow: 15; */
+  background-color: rgba(17, 17, 17, 0.753);
+}
+
+/*Imagen centro*/
+
+.logoLanding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.imgBtn {
+  height: 500px;
+  width: 1000px;
+}
+.button {
+  margin-top: -125px;
+  width: 350px;
+  font-size: 50px;
+  border: none;
+  background: none;
+  color: #dcd0c0;
+}
+
+.link {
+  color: #ebd758;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
+  font-family: Comic Sans MS;
+}
+
+h2 {
+  text-align: left;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 50px;
+  color: #ebd758;
+}
+
+/*FOOTER*/
+
+h3 {
+  font-size: 30px;
+  color: #ebd758;
+  font-family: Comic Sans MS;
+}
+.sectionIIDiv {
+  flex-grow: 20;
+  background-color: rgba(0, 0, 0, 0.945);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2.7%;
+}
+.callerLanding {
+  color: #ebd758;
+  font-family: Comic Sans MS;
+}

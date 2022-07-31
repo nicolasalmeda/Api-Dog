@@ -1,0 +1,271 @@
+.createBreedDiv {
+  display: grid;
+  grid-template-rows: 68px 1fr 80px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/781/360/1009/corgi-garlic-universe-dog-wallpaper-preview.jpg");
+  width: 100%;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.divForm {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.MenuCreate {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 12px;
+}
+
+.createTitle {
+  display: flex;
+  flex-grow: 30;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-right: 73px;
+  font-family: "Lobster", cursive;
+  font-size: 32px;
+  color: var(--color-naranja-intenso);
+}
+.btnHomeCreateForm {
+  margin-top: 15px;
+  margin-left: 25px;
+  float: left;
+  background: var(--color-naranja-dorado);
+  cursor: pointer;
+  border-radius: 50%;
+}
+#form {
+  font-family: "Amatic SC", cursive;
+  border: 5px solid var(--color-naranja-intenso);
+  border-radius: 8px;
+  width: 450px;
+  height: auto;
+  margin-top: 23px;
+  flex-direction: column;
+  background: rgba(0, 3, 49, 0.644);
+  color: var(--color-celeste-claro);
+}
+#form legend {
+  font-size: 23px;
+}
+#form label {
+  font-family: "Amatic SC", cursive;
+  justify-content: flex-start;
+  display: inline-block;
+  font-size: 14px;
+}
+.labelName {
+  color: var(--color-naranja-intenso);
+  text-align: start;
+  display: block;
+  width: 100%;
+  margin-left: 15px;
+}
+.inputName {
+  margin-left: 15px;
+  display: block;
+  width: 85%;
+  height: 21px;
+  border-radius: 4px;
+}
+
+.divHeight {
+  margin-top: 20px;
+  text-align: start;
+}
+.labelHeight {
+  color: var(--color-naranja-intenso);
+  width: 100%;
+  display: block;
+  text-align: start;
+  margin-left: 15px;
+}
+.labelHeightMin {
+  margin-left: 15px;
+}
+.labelHeightMax {
+  margin-left: 5px;
+}
+.divWeight {
+  margin-top: 20px;
+  text-align: start;
+}
+.labelWeight {
+  color: var(--color-naranja-intenso);
+  width: 100%;
+  display: block;
+  text-align: start;
+  margin-left: 15px;
+}
+.labelWeightMin {
+  margin-left: 15px;
+}
+.labelWeightMax {
+  margin-left: 5px;
+}
+.divLife {
+  margin-top: 20px;
+  text-align: start;
+}
+.labelLife {
+  color: var(--color-naranja-intenso);
+  width: 100%;
+  display: block;
+  text-align: start;
+  margin-left: 15px;
+}
+.labelLifeMin {
+  margin-left: 15px;
+}
+.labelLifeMax {
+  margin-left: 5px;
+}
+.divImage {
+  margin-top: 20px;
+}
+.labelImg {
+  color: var(--color-naranja-intenso);
+  text-align: start;
+  display: block;
+  width: 100%;
+  margin-left: 15px;
+}
+.imgCreate {
+  margin-left: 15px;
+  display: block;
+  width: 85%;
+  height: 21px;
+  border-radius: 4px;
+}
+.divTemp {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+.labelTemp {
+  color: var(--color-naranja-intenso);
+  display: block;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+.selectTemperament {
+  border-radius: 4px;
+  display: block;
+  margin-left: 15px;
+  width: 165px;
+}
+.inputNumbers {
+  width: 45px;
+  height: 21px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+.divForm hr {
+  width: 93%;
+  border: 0;
+  border-top: 2px solid var(--color-naranja-intenso);
+}
+
+#form p {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.tempList {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.tempItem {
+  margin-right: 10px;
+  margin-bottom: 4px;
+  font-family: "Amatic SC", cursive;
+  color: var(--color-celeste-claro);
+  font-size: 19px;
+}
+
+.buttonX {
+  height: 25px;
+  width: 25px;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.btnCreate {
+  cursor: pointer;
+  font-size: 18px;
+  background: #153c4e;
+  color: var(--color-celeste-claro);
+  height: 60px;
+  width: 99.5%;
+  border-radius: 8px;
+  border: 1px solid #153c4e;
+}
+.btnCreate:hover {
+  background-color: rgb(33, 145, 23);
+  color: white;
+}
+.danger {
+  margin-left: 15px;
+  display: block;
+  width: 85%;
+  height: 21px;
+  border-radius: 4px;
+  border: red solid 2px;
+}
+.danger2 {
+  width: 45px;
+  height: 21px;
+  border-radius: 2px;
+  margin-left: 5px;
+  border: red solid 2px;
+}
+
+.danger3 {
+  display: block;
+  height: 21px;
+  border-radius: 4px;
+  border: red solid 2px;
+  text-align: start;
+  display: block;
+  width: 85%;
+  margin-left: 15px;
+}
+.Footer {
+  background-color: black;
+  grid-area: footer;
+}
+.Footer p {
+  flex-wrap: wrap;
+  color: white;
+  font-size: 1em;
+}
+.Footer a {
+  height: max-content;
+  width: max-content;
+  color: white;
+  text-decoration: none;
+}
+.footerIcon {
+  color: white;
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+}

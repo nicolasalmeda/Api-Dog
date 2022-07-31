@@ -1,0 +1,214 @@
+:root {
+  --color-naranja-dorado: goldenrod;
+  --color-naranja-intenso: #ff6600;
+  --color-azul-oscuro: #153c4e;
+  --color-celeste: rgb(0, 217, 255);
+  --color-celeste-claro: #b0c6d9;
+  --color-verde-oscuro: #7d8017de;
+}
+
+.Menu {
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-verde-oscuro);
+  text-align: center;
+  color: white;
+  padding: 12px;
+}
+.Menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 85%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.Sbar {
+  flex-grow: 5;
+}
+.AdS {
+  color: var(--color-celeste-claro);
+  cursor: pointer;
+  flex-grow: 1;
+}
+.AdS:hover {
+  opacity: 0.8;
+}
+.btnC {
+  flex-grow: 1;
+  color: var(--color-celeste-claro);
+  text-decoration: none;
+}
+.btnA {
+  flex-grow: 1;
+  visibility: hidden;
+}
+.Menu ul li a {
+  color: (var(--color-naranja-intenso));
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.Menu ul li a:hover {
+  background-color: var(--color-celeste-claro);
+  color: var(--color-azul-oscuro);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.divHome {
+  display: grid;
+  grid-template-rows: 90px auto 1fr 80px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "filters"
+    "main"
+    "footer";
+  background-image: url("https://fondosmil.com/fondo/37959.jpg");
+  background-size: auto;
+  background-repeat: repeat-y;
+  min-width: 100vw;
+  min-height: 50vw;
+  background-position: center;
+  background-attachment: fixed;
+}
+.MainHome {
+  grid-area: main;
+  justify-content: center;
+  align-items: center;
+}
+.MainHomePreload {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(25%) opacity(0.6);
+}
+.dogsContainer {
+  /* font-family: "Amatic SC", cursive;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 0px 0px;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 35px;
+  padding: 35px;
+  justify-content: center;
+}
+
+/* @media (max-width: 560px) {
+  .dogsContainer {
+    grid-template-columns: 100%;
+  }
+} */
+.dogsContainerPreload {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.linkCreate {
+  border: solid var(--color-naranja-dorado);
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 2px;
+  background: transparent;
+  float: left;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 25px;
+  font-family: "Amatic SC", cursive;
+  color: var(--color-celeste);
+  height: 23px;
+  width: 100px;
+  margin-top: 15px;
+}
+
+.Filters {
+  display: none;
+  grid-area: filters;
+  background-color: black;
+  justify-content: space-evenly;
+  height: 40px;
+  padding-left: 98px;
+}
+
+.btnClean {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  width: min-content;
+  background-color: rgb(208, 36, 36);
+  font-weight: bold;
+  color: white;
+  border-style: hidden;
+  border-radius: 2px;
+  padding: 6px;
+}
+select {
+  width: max-content;
+  height: max-content;
+  flex-shrink: 1;
+  cursor: pointer;
+  padding: 7px 10px;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  border: 2px solid var(--color-naranja-dorado);
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.Title h1 {
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  color: var(--color-celeste-claro);
+}
+.Title svg {
+  font-size: 85px;
+  color: var(--color-celeste);
+}
+
+.preloaderHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--color-azul-oscuro);
+  border-top: 10px solid var(--color-celeste);
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: transparent;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

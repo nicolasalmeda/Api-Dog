@@ -1,0 +1,74 @@
+.dogDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 3px solid var(--color-naranja-dorado);
+  border-radius: 15px;
+  padding: 15px 10px;
+  box-sizing: content-box;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.596);
+  transition-duration: 0.7s;
+}
+.dogDiv:hover {
+  transform: scale(1.05);
+  border-color: #a63d17;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+.dogDiv hr {
+  width: 90%;
+  border-color: var(--color-naranja-dorado);
+}
+.dogDiv:hover hr {
+  width: 98%;
+  border-color: #a63d17;
+}
+.dogDiv h3 {
+  height: 10%;
+  color: #dcd0c0;
+  font-family: monospace;
+  font-size: 18px;
+}
+.dogDiv a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  color: rgb(206, 205, 208);
+}
+.cardContain {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.dogImg {
+  margin: 5px 0;
+  border-radius: 10px;
+  width: 90%;
+  height: 130px;
+}
+.cardContain ul {
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+.cardContain h4 {
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.dogTemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 35px;
+  text-decoration: none;
+}
+.dogTempItem {
+  list-style: none;
+}

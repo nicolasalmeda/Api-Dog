@@ -1,0 +1,28 @@
+.navPag {
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+
+.pagination {
+  margin: 1px;
+  height: 30px;
+  width: 35px;
+  background: #dcd0c0;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.pagination:hover {
+  cursor: pointer;
+  filter: brightness(2);
+  background-color: #b0c6d9;
+}
+
+.pagination:active {
+  background: goldenrod;
+  color: rgb(10, 0, 66);
+}
+.pagination:focus {
+  background: #ff6600;
+  color: rgb(10, 0, 66);
+}
