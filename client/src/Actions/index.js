@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const url = "http://localhost:3001";
+// const url = "http://localhost:3001";
 
 export function getDogs() {
   return async function (dispatch) {
-    let json = await axios.get(url + "/dogs");
+    let json = await axios.get("/dogs");
     return dispatch({
       type: "GET_DOGS",
       payload: json.data,
@@ -15,7 +15,7 @@ export function getDogs() {
 export function getTemperaments() {
   return async function (dispatch) {
     // Le pasamos la ruta del back para que me traiga todos los dogs.
-    var json = await axios.get(url + "/temperaments", {});
+    var json = await axios.get("/temperaments", {});
     return dispatch({
       type: "GET_TEMPERAMENTS",
       payload: json.data,
@@ -28,7 +28,7 @@ export function postDog(payload) {
   return async function () {
     // Le pasamos la ruta del back para que me traiga todos los dogs.
     try {
-      var response = await axios.post(url + "/dog", payload);
+      var response = await axios.post("/dog", payload);
       console.log(response.data);
       /* return response; */
     } catch (error) {
@@ -72,7 +72,7 @@ export function getDogDetail(id) {
   console.log(id);
   return async function (dispatch) {
     try {
-      var json = await axios.get(url + `/dogs/${id}`);
+      var json = await axios.get(`/dogs/${id}`);
       return dispatch({
         type: "GET_DOG_DETAIL",
         payload: json.data,
@@ -89,7 +89,7 @@ export function getDogName(name) {
   // Le pego la ruta y le digo ejecutamela con lo que te estoy pasando como "name"
   return async function (dispatch) {
     try {
-      var json = await axios.get("http://localhost:3001/dogs?name=" + name);
+      var json = await axios.get("/dogs?name=" + name);
       return dispatch({
         type: "GET_DOG_BY_NAME",
         payload: json.data, // La respuesta de la promesa guardada en "json"
