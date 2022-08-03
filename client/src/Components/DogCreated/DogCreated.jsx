@@ -16,14 +16,20 @@ function validate(input) {
     errors.height_min = "Height Min is required";
   } else if (!input.height_max) {
     errors.height_max = "Height Max is required";
+  } else if (input.height_min > input.height_max) {
+    errors.height_min = "heigh max must be greater than height min";
   } else if (!input.weight_min) {
     errors.weight_min = "Weight Min is required";
   } else if (!input.weight_max) {
     errors.weight_min = "Weight Max is required";
+  } else if (input.weight_min > input.weight_max) {
+    errors.weight_min = "wheight max must be greater than wheight min";
   } else if (!input.life_span_min) {
     errors.life_span_min = "Life expectancy Min is required";
   } else if (!input.life_span_max) {
     errors.life_span_max = "Life expectancy Max is required";
+  } else if (input.life_span_min > input.life_span_max) {
+    errors.life_span_min = "life span max must be greater than life span min";
   } else if (!input.image) {
     errors.image = "Link image is required";
   }

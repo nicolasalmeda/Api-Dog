@@ -13,7 +13,8 @@ const temperamentsCreate = async () => {
       }
     });
     temperaments = Array.from(new Set(temperaments)).sort();
-
+    // Set permite almacenar valores únicos de cualquier tipo para sacar los que se repiten.
+    // Array.from crea una nueva instancia de Array a partir de un objeto iterable
     for await (var temp of temperaments) {
       Temperament.create({ name: temp });
     }

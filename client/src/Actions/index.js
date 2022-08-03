@@ -30,7 +30,7 @@ export function postDog(payload) {
     try {
       var response = await axios.post("/dog", payload);
       console.log(response.data);
-      /* return response; */
+      return response;
     } catch (error) {
       console.log(error);
     }

@@ -35,11 +35,12 @@ router.get("/", async (req, res) => {
         return {
           id: d.id,
           name: d.name,
-          // height: splitByScript(d.height.metric),
-          height: d.height.metric,
-          // weight: splitByScript(d.weight.metric),
-          weight: d.weight.metric,
+          height: splitByScript(d.height.metric),
+
+          weight: splitByScript(d.weight.metric),
+
           life_span: splitByScript(d.life_span),
+
           image: d.image.url,
           temperament: splitByColon(d.temperament),
         };
@@ -78,8 +79,11 @@ router.get("/", async (req, res) => {
           id: d.id,
           name: d.name,
           height: splitByScript(d.height.metric),
+
           weight: splitByScript(d.weight.metric),
+
           life_span: splitByScript(d.life_span),
+
           image: d.image.url,
           temperament: splitByColon(d.temperament),
         };
@@ -116,8 +120,11 @@ router.get("/:id", async (req, res) => {
       id: d.id,
       name: d.name,
       height: splitByScript(d.height.metric),
+
       weight: splitByScript(d.weight.metric),
+
       life_span: splitByScript(d.life_span),
+
       image: d.image.url,
       temperament: splitByColon(d.temperament),
     };

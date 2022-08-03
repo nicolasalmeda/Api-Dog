@@ -25,13 +25,12 @@ export default function Home() {
   const [order, setOrder] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [dogsPerPage, setDogPerPage] = useState(12);
-  console.log("currentPage", currentPage);
+
   const indexOfLastDog = currentPage * dogsPerPage;
-  console.log("index of last dog", indexOfLastDog);
+
   const indexOfFirstDog = indexOfLastDog - dogsPerPage;
-  console.log("index of first dog", indexOfFirstDog);
+
   const currentDog = allDogs.slice(indexOfFirstDog, indexOfLastDog);
-  console.log("current dog", currentDog);
 
   // Cambiar estado del Numero de Pagina
   const pagination = (pageNumber) => {
