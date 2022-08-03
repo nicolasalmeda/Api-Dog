@@ -69,7 +69,6 @@ export function orderByWeight(payload) {
 }
 
 export function getDogDetail(id) {
-  console.log(id);
   return async function (dispatch) {
     try {
       var json = await axios.get(`/dogs/${id}`);

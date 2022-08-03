@@ -46,6 +46,7 @@ function rootReducer(state = initialState, action) {
         action.payload === "asc"
           ? /* Ascendente */
             state.dogs.sort(function (a, b) {
+              // sort ordena los elementos de un array
               if (a.name > b.name) {
                 return 1;
               }
